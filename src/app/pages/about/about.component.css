@@ -1,0 +1,145 @@
+.bubble {
+    background-color: #4da6ff; /* couleur de fond */
+    color: #fff; /* couleur de texte */
+    padding: 10px 20px; /* espacement intérieur */
+    border-radius: 20px; /* arrondi des coins */
+    position: relative; /* position relative pour permettre un positionnement absolu de la flèche */
+    width: 500px; /* largeur de la bulle */
+    text-align: center; /* centrage du texte */
+    font-weight: bold; /* épaisseur du texte */
+    font-size: 16px; /* taille du texte */
+    margin: 20px auto; /* marges pour le positionnement de la bulle */
+  }
+  
+  .bubble::before {
+    content: ""; /* contenu vide pour la flèche */
+    position: absolute; /* position absolue pour positionner la flèche */
+    bottom: -20px; /* positionnement de la flèche en bas de la bulle */
+    left: 50%; /* positionnement horizontal de la flèche */
+    margin-left: -10px; /* décalage horizontal pour centrer la flèche */
+   
+    border-width: 10px 10px 0; /* dimensions de la flèche */
+    border-style: solid; /* style de la bordure de la flèche */
+    border-color: #4da6ff transparent; /* couleurs de la bordure de la flèche */
+  }
+  .paragraph-container {
+    background-color: #f2f2f2; /* couleur de fond */
+    padding: 20px; /* espacement intérieur */
+    border-radius: 10px; /* arrondi des coins */
+    width: 400px; /* largeur de la boîte */
+    margin: 20px auto; /* marges pour le positionnement de la boîte */
+    text-align: center; /* centrage horizontal du texte */
+  }
+  
+  .paragraph-text {
+    font-size: 16px; /* taille du texte */
+    color: #333; /* couleur de texte */
+    margin: 0; /* suppression des marges par défaut du paragraphe */
+  }
+  .row {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col-lg-4 {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .col-lg-4 img {
+    max-width: 100%;
+  }
+  
+  .col-lg-4 p {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .roww {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col-lg-4 {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .circle img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .founder {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .founder img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .founder h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .founder p {
+    font-size: 18px;
+    color: #777;
+  }
+  .supported-by {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .supported-by h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .supported-by img {
+    width: 1400px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .supported-by p {
+    font-size: 18px;
+    color: #777;
+  }

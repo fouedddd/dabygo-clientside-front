@@ -1,0 +1,185 @@
+
+<head>
+    <title>page contact</title>
+</head>
+  <section class="section pb-0">
+
+    <!-- Content -->
+    <div *ngIf="showAlert" class="alert-message">
+      <p>Message envoyé avec succès</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <!-- Title -->
+          <h6 class="title">
+            Formulaire de contact et informations
+          </h6>
+        </div>
+        <div class="col-md-10">
+
+          <!-- Heading -->
+          <h3 class="mb-4">
+            Avez vous questions? Envoyez-nous un <span class="text-primary">e-mail</span>
+          </h3>
+
+
+          <!-- Form -->
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                
+                <!-- Name -->
+                <label>Nom et prénom</label>
+                <div class="input-group">
+                  <input type="text" class="form-control order-1" name="NomComplet" [(ngModel)]="newMessage.NomComplet" required="">
+                  <div class="input-group-append order-0">
+                    <div class="input-group-text">
+                      <svg class="input-group-icon icon-offset icon icon-person" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path transform="translate(3 3)" d="
+                          M0 100 A 50 50 0 0 1 50 60 A 20 20 0 0 1 50 0 A 20 20 0 0 1 50 60 A 50 50 0 0 1 100 100">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-group col-md-6">
+                
+                <!-- Email -->
+                <label>Address email </label>
+                <div class="input-group">
+                  <input type="email" class="form-control order-1" name="email" [(ngModel)]="newMessage.email" required="">
+                  <div class="input-group-append order-0">
+                    <div class="input-group-text">
+                      <svg class="input-group-icon icon-offset icon icon-envelope" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path transform="translate(3 3)" d="
+                          M0 30 V 10 H 100 V 90 H 0 V 30 L 50 60 L 100 30">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- / .form-row -->
+            <div class="form-row">
+              <div class="form-group col-12">
+                
+                <!-- Message -->
+                <label>Vos commentaires</label>
+                <textarea class="form-control" name="contact-message" rows="7" [(ngModel)]="newMessage.sujet" required=""></textarea>
+                
+              </div>
+            </div> <!-- / .form-row -->
+            <div class="form-row">
+              <div class="col-12">
+                
+                <!-- Submit -->
+                <button type="submit" (click)="ajouterMessage()" class="btn btn-success">
+                  Envoyer message
+                </button>
+
+                <!-- Reset -->
+                <button type="reset" class="btn btn-danger">
+                  Reset formulaire
+                </button>
+
+              </div>
+            </div>
+          </form>
+          
+        </div>
+      </div> 
+    </div> 
+
+  </section>
+
+
+  <section class="section">
+
+    <!-- Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          
+          <!-- Title -->
+          <h6 class="title">
+            Nos bureaux
+          </h6>
+
+        </div>
+        <div class="col-md-10">
+
+          <!-- Heading -->
+          <h3 class="mb-4">
+            Vouloir parler <span class="text-primary">en personne</span>? Appelez-nous ou rendez-nous visite
+          </h3>
+
+      
+          
+          <!-- Content -->
+          <div class="row">
+            <div class="col-md-6 col-lg-5">
+              
+              <!-- Heading -->
+              <h5>
+                Localisation:
+              </h5>
+              
+              <!-- Address -->
+              <p class="text-muted">
+                Ariana,Sokra
+              </p>
+
+              <!-- Heading -->
+              <h5>
+                Email:
+              </h5>
+              
+              <!-- Address -->
+              <p class="text-muted">
+                <a href="mailto:admin@domain.com">
+                    Contact@dabygo.com
+                </a>
+              </p>
+
+            </div>
+            <div class="col-md-6 col-lg-5">
+
+              <!-- Heading -->
+              <h5>
+                Appelez-nous
+              </h5>
+              
+              <!-- Phone -->
+              <p class="text-muted">
+                <a href="tel:1234567890">
+                  +21626506250
+                </a>
+              </p>
+
+              <!-- Heading -->
+              <h5>
+                Linkidin
+              </h5>
+              
+              <!-- Phone -->
+              <p class="text-muted">
+                <a href="tel:1234567890">
+                  https://www.linkedin.com/company/daby-go
+                </a>
+              </p>
+
+            </div>
+          </div>   <!-- / .row -->
+
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+
+  </section>
+
+ 
+ 

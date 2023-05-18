@@ -1,0 +1,13 @@
+.alert-message {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #4dca4f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    
